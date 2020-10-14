@@ -88,3 +88,38 @@ newReadStream.on("data", function (chunk) {
   console.log("Read from readme.txt and written to writeme.txt");
 });
 ```
+
+## Removing or Deleting files
+
+```js
+function removeFile(fileName) {
+  return new Promise(function (resolve, reject) {
+    fs.unlink("./files/" + fileName, function (err, done) {
+      if (err) {
+        reject("Failed to remove the file. Error: " + err);
+      } else {
+        resolve("File removed successfully...");
+      }
+    });
+  });
+}
+```
+
+## Renaming Files
+
+```js
+function renameFile(fileName, newName) {
+  return new Promise(function (resolve, reject) {
+    fs.rename("./files/" + fileName, "./files/" + newName, function (
+      err,
+      done
+    ) {
+      if (err) {
+        reject("File cannot be renamed. Error: " + err);
+      } else {
+        resolve("File has beeen renamed...");
+      }
+    });
+  });
+}
+```
