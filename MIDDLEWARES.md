@@ -42,7 +42,7 @@ app.listen(3000, function () {
 
 1. Application Level Middleware
 2. Third Party Middleware
-3. [Routing Level Middleware](https://github.com/baijanathTharu/nodejs-notes-mern/blob/master/ROUTING.md)
+3. [Routing Level Middleware](https://github.com/baijanathTharu/nodejs-notes-mern/blob/master/routing/ROUTING.md)
 4. [Error Handling Middleware](https://github.com/baijanathTharu/nodejs-notes-mern/blob/master/ERROR_HANDLING.md)
 5. [Inbuilt Middleware](https://github.com/baijanathTharu/nodejs-notes-mern/blob/master/INBUILT.md)
 
