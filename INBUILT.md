@@ -32,5 +32,5 @@ const path = require('path);
 
 // e.g. Assumce root directory is server
 // so we get server/files
-app.use('/file', express.static(path.join(__dirName, 'files')));
+app.use('/file', express.static(path.join(__dirname, 'files')));
 ```

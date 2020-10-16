@@ -11,3 +11,5 @@
 ## 5. [Express Introduction](https://github.com/baijanathTharu/nodejs-notes-mern/blob/master/EXPRESS_INTRODUCTION.md)
 
 ## 6. [MIDDLEWARES](https://github.com/baijanathTharu/nodejs-notes-mern/blob/master/MIDDLEWARES.md)
+
+## 7. [Views](https://github.com/baijanathTharu/nodejs-notes-mern/blob/master/VIEWS.md)
