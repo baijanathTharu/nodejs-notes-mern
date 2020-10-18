@@ -25,7 +25,7 @@ const pug = require("pug");
 // setting view engine
 app.set("view engine", pug);
 // setting up the folder for views
-app.use("views", path.join(__dirname, "views"));
+app.set("views", path.join(__dirname, "views"));
 ```
 
 ## Pug
