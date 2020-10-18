@@ -1,0 +1,24 @@
+extends layout.pug
+block content
+  h3.text-dark Please Sign Up
+  form(method='POST').form-group
+    label(for='username').my-1 
+      h4.text-primary Username
+    input(type='text', placeholder='username', name='username').form-control.my-1
+    label(for="password").my-1 
+      h4.text-primary Password
+    input(type="password", name='password', placeholder='*****').form-control.my-1
+    button(type='submit').btn.btn-primary.my-2 Signup
+  .my-4.border.border-secondary
+    p.p-2 If we submit this form, the server has to perform some actions to receive the information that is sent through the form. 
+    ol.list-group
+      li.list-group-item.list-group-item-info
+        p.text-dark The client makes post request to the server at /auth/signup
+      li.list-group-item.list-group-item-success
+        p.text-dark Parse the data using appropriate parser (for e.g. body-parser). The data can be accessed on the request object with body property.
+      li.list-group-item.list-group-item-warning
+        p.text-dark Access the database for different operations (using controllers)
+      li.list-group-item.list-group-item-warning
+        p.text-dark Complete the request and response cycle by sending appropriate response.
+      
+    
