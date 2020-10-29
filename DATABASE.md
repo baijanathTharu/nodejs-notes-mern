@@ -28,3 +28,20 @@
 - Relation doesnot exist.
 - NoSql(not only structured query language)
 - E.g. mongodb, couchdb, dynamodb, redis
+
+## Mongodb
+
+- Mongodb id: hex code with timestamp value
+
+* show databases
+  > show dbs
+* using database
+  > use testdb
+* show collections in a database
+  > show collections
+* insert a document in a collection
+  > db.users.insert({ name: 'John', profession: 'web developer'})
+* find documents in a collection
+  > db.users.find({})
+* Dropping database
+  > db.dropDatabase()
