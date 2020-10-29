@@ -1,4 +1,3 @@
-```js
 const fs = require("fs");
 const crypto = require("crypto");
 
@@ -55,4 +54,3 @@ fs.readFile("test.txt", (err, data) => {
 
 // a top level code
 console.log("Hello from top level code");
-```
