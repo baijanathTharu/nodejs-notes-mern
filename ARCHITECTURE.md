@@ -1,5 +1,20 @@
 # Architecture of NodeJs
 
+## Event Driven Architecture
+
+- Most of nodejs core modules are built around event driven architecture.
+- There are event emitters which emit named events and there are event listners that listen emitted events.
+- Whenever a new event is emitted, a callback is executed.
+- Example:
+
+```js
+const server = require("http").createServer();
+// a request listener
+server.on("request", (req, res) => {
+  res.end("Request received.");
+});
+```
+
 - Most of the core API of NodeJs are based upon [idiomatic asynchronous event-driven architecture](https://nodejs.org/docs/latest-v12.x/api/events.html).
 
 - In this architecture:
