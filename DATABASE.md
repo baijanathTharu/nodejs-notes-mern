@@ -45,3 +45,14 @@
   > db.users.find({})
 * Dropping database
   > db.dropDatabase()
+* Mongodb official driver can be used to perform database operations with express. But Schema cannot be made.
+
+## Mongoose
+
+- Mongoose is an ODM(Object Document Modelling) for nodejs to use mongodb.
+- Advantages:
+  - Schema based solutino
+  - Data type
+  - Has own methods for querying database
+  - middlewares
+  - indexing is easy
