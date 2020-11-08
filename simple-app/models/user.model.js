@@ -24,8 +24,8 @@ const UserSchema = new Schema(
     },
     dob: Date,
     address: {
-      temp_address: [String],
-      permanent_address: String,
+      tempAddress: [String],
+      permanentAddress: String,
     },
     gender: {
       type: String,

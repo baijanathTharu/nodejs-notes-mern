@@ -29,6 +29,21 @@ app.get("/", function (req, res, next) {
 
 app.use("/api", apiRouter);
 
+app.use(function (req, res, next) {
+  const url = req.originalUrl;
+  next({
+    message: `${url} not found`,
+    status: 404,
+  });
+});
+
+app.use(function (e, req, res, next) {
+  res.json({
+    message: e.message,
+    status: e.status || 500,
+  });
+});
+
 app.listen(appConfig.port, function () {
   console.log("Listenting on port: ", appConfig.port);
 });

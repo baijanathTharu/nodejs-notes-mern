@@ -1,4 +1,4 @@
-const dbUrl = "mongodb://localhost:27017";
+const dbUrl = "mongodb://localhost:27017/";
 const dbName = "mernPractice";
 
 module.exports = {

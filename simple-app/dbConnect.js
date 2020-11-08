@@ -1,9 +1,9 @@
 const mongoose = require("mongoose");
 
-const dbConfig = require("./configs/db.config");
+const { dbUrl, dbName } = require("./configs/db.config");
 
 mongoose
-  .connect(dbConfig.dbUrl, {
+  .connect(dbUrl + dbName, {
     useUnifiedTopology: true,
     useNewUrlParser: true,
     useCreateIndex: true,
