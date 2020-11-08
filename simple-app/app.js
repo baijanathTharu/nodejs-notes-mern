@@ -3,13 +3,13 @@ const morgan = require("morgan");
 const path = require("path");
 const pug = require("pug");
 
+const appConfig = require("./configs/app.config");
 const apiRouter = require("./routers/api.router");
 
 const app = express();
 
-const port = 8080;
+require("./dbConnect");
 
-// using a json parser
 app.use(express.json());
 
 app.use(
@@ -21,7 +21,6 @@ app.use(
 app.set("view engine", pug);
 app.set("views", path.join(__dirname, "views"));
 
-// using morgan in dev mode
 app.use(morgan("dev"));
 
 app.get("/", function (req, res, next) {
@@ -30,6 +29,6 @@ app.get("/", function (req, res, next) {
 
 app.use("/api", apiRouter);
 
-app.listen(port, function () {
-  console.log("Listenting on port: ", port);
+app.listen(appConfig.port, function () {
+  console.log("Listenting on port: ", appConfig.port);
 });
