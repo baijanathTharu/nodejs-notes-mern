@@ -23,7 +23,23 @@ router.post("/register", function (req, res, next) {
 });
 
 router.post("/login", function (req, res, next) {
-  res.send("login");
+  const { username, email_address, password } = req.body;
+
+  UserModel.findOne({ username: username })
+    .then(function (user) {
+      console.log("user: ", user);
+      if (!user)
+        return next({
+          message: "User not available. please register!",
+          status: 404,
+        });
+      res.json({ message: "You are logged in!" });
+    })
+    .catch(function (e) {
+      next({
+        message: e.message,
+      });
+    });
 });
 
 module.exports = router;
