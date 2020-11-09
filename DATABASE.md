@@ -56,3 +56,17 @@
   - Has own methods for querying database
   - middlewares
   - indexing is easy
+
+## Modelling Database
+
+- Predefined data sets
+  - username, password, email, dob, university etc
+- Generated database
+  - Data that are fetched later on
+- Need of these data
+  - Homepage, Userpage, mobile app
+- Filter per query(queries are expensive)
+  - demographic, geographic filtering
+- How many queries are fired?
+  - fire less query
+- How often will you change the data?
